@@ -1,0 +1,20 @@
+def bubblesort(lis):
+    for i in range(len(lis)-1):
+        
+        for j in range(len(lis)-1-i):
+            
+            if lis[j] > lis[j+1]:
+                
+                lis[j],lis[j+1] = lis[j+1],lis[j]
+    return lis
+
+def test():
+    lis = [56, 12, 36, 102, 3, 0, -51]
+
+    print('Before sorted list:', lis)
+    
+    sortlis = bubblesort(lis)
+    
+    print('After sorted list:',sortlis)
+
+test()
